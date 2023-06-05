@@ -15,7 +15,21 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack{
-                
+                List {
+                    ForEach(habits.habits, id: \.id) { habit in
+                        NavigationLink {
+                            HabitView()
+                        } label: {
+                            VStack(alignment: .leading) {
+                                Text(habit.name)
+                                    .font(.headline)
+                                Text(habit.description)
+                                    .font(.caption)
+                            }
+                            
+                        }
+                    }
+                }
             }
             .navigationTitle("Habit Tracking")
             .toolbar {
