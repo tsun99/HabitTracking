@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Habit: Identifiable {
+struct Habit: Identifiable, Codable {
     var id: Int
     let name: String
     let description: String

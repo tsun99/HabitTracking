@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @StateObject var habits = Habits()
+    
     @State private var isNewHabitClicked = false
     var body: some View {
         NavigationView {
@@ -22,7 +24,9 @@ struct ContentView: View {
                 } label: {
                     Image(systemName: "plus")
                 }
-                
+            }
+            .sheet(isPresented: $isNewHabitClicked) {
+                NewHabitView()
             }
         }
     }

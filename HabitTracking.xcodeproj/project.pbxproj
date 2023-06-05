@@ -13,6 +13,7 @@
 		2919E1CE2A2E3C6600BAC3B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2919E1CD2A2E3C6600BAC3B7 /* Preview Assets.xcassets */; };
 		2919E1D52A2E3E5A00BAC3B7 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919E1D42A2E3E5A00BAC3B7 /* Habit.swift */; };
 		2919E1D72A2E3EE700BAC3B7 /* Habits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919E1D62A2E3EE700BAC3B7 /* Habits.swift */; };
+		2919E1D92A2E418400BAC3B7 /* NewHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919E1D82A2E418400BAC3B7 /* NewHabitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		2919E1CD2A2E3C6600BAC3B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2919E1D42A2E3E5A00BAC3B7 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
 		2919E1D62A2E3EE700BAC3B7 /* Habits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habits.swift; sourceTree = "<group>"; };
+		2919E1D82A2E418400BAC3B7 /* NewHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHabitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				2919E1C62A2E3C6300BAC3B7 /* HabitTrackingApp.swift */,
 				2919E1C82A2E3C6300BAC3B7 /* ContentView.swift */,
+				2919E1D82A2E418400BAC3B7 /* NewHabitView.swift */,
 				2919E1D42A2E3E5A00BAC3B7 /* Habit.swift */,
 				2919E1D62A2E3EE700BAC3B7 /* Habits.swift */,
 				2919E1CA2A2E3C6600BAC3B7 /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 				2919E1D52A2E3E5A00BAC3B7 /* Habit.swift in Sources */,
 				2919E1C92A2E3C6300BAC3B7 /* ContentView.swift in Sources */,
 				2919E1D72A2E3EE700BAC3B7 /* Habits.swift in Sources */,
+				2919E1D92A2E418400BAC3B7 /* NewHabitView.swift in Sources */,
 				2919E1C72A2E3C6300BAC3B7 /* HabitTrackingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
