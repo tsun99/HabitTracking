@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var isNewHabitClicked = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            VStack{
+                
+            }
+            .navigationTitle("Habit Tracking")
+            .toolbar {
+                Button {
+                    isNewHabitClicked = true
+                } label: {
+                    Image(systemName: "plus")
+                }
+                
+            }
         }
-        .padding()
     }
 }
 
