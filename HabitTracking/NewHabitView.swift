@@ -8,16 +8,30 @@
 import SwiftUI
 
 struct NewHabitView: View {
+    
+    @State var habits: Habits
     @Environment(\.dismiss) var dismiss
+    
+    @State private var name = ""
+    @State private var description = ""
     
     var body: some View {
         NavigationView(){
             Form {
-                
+                Section(header: Text("Name")) {
+                    TextField("Name of Habit", text: $name )
+                }
+                Section(header: Text("Description")) {
+                    TextField("Description", text: $description, axis: .vertical)
+                        .textFieldStyle(.roundedBorder)
+                        .lineLimit(10)
+                }
             }
             .navigationTitle("Add New Habit")
             .toolbar {
                 Button("Save"){
+                    let item = Habit(name: name, description: description, date: Date.now)
+                    habits.habits.append(item)
                     dismiss()
                 }
             }
@@ -27,6 +41,6 @@ struct NewHabitView: View {
 
 struct NewHabitView_Previews: PreviewProvider {
     static var previews: some View {
-        NewHabitView()
+        NewHabitView(habits: Habits())
     }
 }

@@ -26,7 +26,7 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $isNewHabitClicked) {
-                NewHabitView()
+                NewHabitView(habits: habits)
             }
         }
     }

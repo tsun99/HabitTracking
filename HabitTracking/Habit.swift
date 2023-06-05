@@ -8,9 +8,8 @@
 import Foundation
 
 struct Habit: Identifiable, Codable {
-    var id: Int
+    var id = UUID()
     let name: String
     let description: String
-    let timeSpent: String
     let date: Date
 }
