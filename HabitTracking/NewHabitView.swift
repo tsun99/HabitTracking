@@ -30,6 +30,9 @@ struct NewHabitView: View {
             .navigationTitle("Add New Habit")
             .toolbar {
                 Button("Save"){
+                    if name == "" && description == "" {
+                        dismiss()
+                    }
                     let item = Habit(name: name, description: description, date: Date.now)
                     habits.habits.append(item)
                     dismiss()

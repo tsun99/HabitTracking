@@ -29,6 +29,7 @@ struct ContentView: View {
                             
                         }
                     }
+                    .onDelete(perform: delete)
                 }
             }
             .navigationTitle("Habit Tracking")
@@ -43,6 +44,9 @@ struct ContentView: View {
                 NewHabitView(habits: habits)
             }
         }
+    }
+    func delete(at offsets: IndexSet) {
+        habits.habits.remove(atOffsets: offsets)
     }
 }
 
