@@ -15,6 +15,7 @@
 		2919E1D72A2E3EE700BAC3B7 /* Habits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919E1D62A2E3EE700BAC3B7 /* Habits.swift */; };
 		2919E1D92A2E418400BAC3B7 /* NewHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919E1D82A2E418400BAC3B7 /* NewHabitView.swift */; };
 		2919E1DC2A2E4A1900BAC3B7 /* HabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919E1DB2A2E4A1900BAC3B7 /* HabitView.swift */; };
+		2919E1DF2A2E7DC600BAC3B7 /* AddNewActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2919E1DE2A2E7DC600BAC3B7 /* AddNewActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		2919E1D62A2E3EE700BAC3B7 /* Habits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habits.swift; sourceTree = "<group>"; };
 		2919E1D82A2E418400BAC3B7 /* NewHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHabitView.swift; sourceTree = "<group>"; };
 		2919E1DB2A2E4A1900BAC3B7 /* HabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitView.swift; sourceTree = "<group>"; };
+		2919E1DE2A2E7DC600BAC3B7 /* AddNewActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewActivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				2919E1C62A2E3C6300BAC3B7 /* HabitTrackingApp.swift */,
 				2919E1C82A2E3C6300BAC3B7 /* ContentView.swift */,
 				2919E1DB2A2E4A1900BAC3B7 /* HabitView.swift */,
+				2919E1DE2A2E7DC600BAC3B7 /* AddNewActivity.swift */,
 				2919E1D82A2E418400BAC3B7 /* NewHabitView.swift */,
 				2919E1D42A2E3E5A00BAC3B7 /* Habit.swift */,
 				2919E1D62A2E3EE700BAC3B7 /* Habits.swift */,
@@ -155,6 +158,7 @@
 				2919E1DC2A2E4A1900BAC3B7 /* HabitView.swift in Sources */,
 				2919E1D92A2E418400BAC3B7 /* NewHabitView.swift in Sources */,
 				2919E1C72A2E3C6300BAC3B7 /* HabitTrackingApp.swift in Sources */,
+				2919E1DF2A2E7DC600BAC3B7 /* AddNewActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

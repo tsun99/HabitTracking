@@ -18,13 +18,22 @@ struct ContentView: View {
                 List {
                     ForEach(habits.habits, id: \.id) { habit in
                         NavigationLink {
-                            HabitView()
+                            HabitView(habit: habit)
                         } label: {
-                            VStack(alignment: .leading) {
-                                Text(habit.name)
-                                    .font(.headline)
-                                Text(habit.description)
-                                    .font(.caption)
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text(habit.name)
+                                        .font(.headline)
+                                    Text(habit.description)
+                                        .font(.caption)
+                                }
+                                Spacer()
+                                VStack(alignment: .center) {
+                                    Text("Total times:")
+                                        .font(.caption)
+                                    Text("\(habit.count)")
+                                        .font(.headline)
+                                }
                             }
                             
                         }

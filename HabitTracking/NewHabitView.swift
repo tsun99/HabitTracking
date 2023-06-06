@@ -32,8 +32,9 @@ struct NewHabitView: View {
                 Button("Save"){
                     if name == "" && description == "" {
                         dismiss()
+                        return
                     }
-                    let item = Habit(name: name, description: description, date: Date.now)
+                    let item = Habit(name: name, description: description, count: 0)
                     habits.habits.append(item)
                     dismiss()
                 }
