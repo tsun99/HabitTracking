@@ -2,7 +2,7 @@
 
 This is a habit-tracking iOS application built using SwiftUI. The application allows users to track their daily habits, and monitor their progress.
 
-### Features
+## Features
 
 * Add New Habits: Users can add new habits they wish to start tracking. They can provide a name, category, and any additional details for each habit.
 * Track Activities: Inside each habit category, users can add new activities. They can specify the time taken to complete the activity and provide additional information if necessary.
