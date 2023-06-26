@@ -31,6 +31,7 @@ struct HabitView: View {
                         }
                     }
                 }
+                .onDelete(perform: delete)
             }
             .navigationTitle(habit.name)
             .toolbar {
@@ -44,6 +45,9 @@ struct HabitView: View {
                 AddNewActivity(habit: habit, habits: habits)
             }
         }
+    }
+    func delete(at offsets: IndexSet) {
+        habits.activities.remove(atOffsets: offsets)
     }
 }
 
