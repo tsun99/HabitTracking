@@ -13,7 +13,6 @@ struct TimeField: View {
     @Binding var date: Date
     @State var title: String
     
-    
     var body: some View {
         VStack {
             Text(title)
@@ -53,6 +52,9 @@ struct AddNewActivity: View {
     
     @Environment(\.dismiss) var dismiss
     
+    var habit: Habit
+    @StateObject var habits: Habits
+    
     var body: some View {
         
             
@@ -72,9 +74,9 @@ struct AddNewActivity: View {
                         
                     }
                     
-                    Section(header: Text("Description")) {
+                    Section(header: Text("Information")) {
                         
-                        TextField("Enter description for the activity", text: $description, axis: .vertical)
+                        TextField("Enter information for the activity", text: $description, axis: .vertical)
                             .padding()
                             .lineLimit(6)
                         
@@ -85,7 +87,10 @@ struct AddNewActivity: View {
             .navigationTitle("Add Activity")
             .toolbar {
                 Button {
+                    let activity = Activity(idHabit: habit.id, info: description, startTime: startTime, endTime: endTime)
+                    habits.activities.append(activity)
                     dismiss()
+                    
                 } label: {
                     Text("Add")
                 }
@@ -99,6 +104,6 @@ struct AddNewActivity: View {
 
 struct AddNewActivity_Previews: PreviewProvider {
     static var previews: some View {
-        AddNewActivity()
+        AddNewActivity(habit: Habit(name: "null", description: "", count: 0), habits: Habits())
     }
 }

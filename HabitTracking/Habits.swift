@@ -15,6 +15,7 @@ class Habits: ObservableObject {
             }
         }
     }
+    @Published var activities = [Activity] ()
     
     init() {
         if let savedItems = UserDefaults.standard.data(forKey: "Habits") {
