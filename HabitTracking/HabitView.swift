@@ -21,10 +21,13 @@ struct HabitView: View {
                         VStack{
                             HStack {
                                 Text(activity.info)
+                                    .font(.headline)
                                 Spacer()
                                 VStack {
                                     Text("Time spent:")
+                                        .font(.caption)
                                     Text("\(activity.timeDoingActivity())")
+                                        .font(.headline)
                                 }
                             }
                             
@@ -47,6 +50,11 @@ struct HabitView: View {
         }
     }
     func delete(at offsets: IndexSet) {
+        let newHabit = Habit(id: habit.id, name: habit.name, description: habit.description, count: habit.count - 1)
+        if let i = habits.habits.firstIndex(of: habit) {
+            habits.habits[i] = newHabit
+        }
+        
         habits.activities.remove(atOffsets: offsets)
     }
 }

@@ -89,6 +89,12 @@ struct AddNewActivity: View {
                 Button {
                     let activity = Activity(idHabit: habit.id, info: description, startTime: startTime, endTime: endTime)
                     habits.activities.append(activity)
+                    
+                    let newHabit = Habit(id: habit.id, name: habit.name, description: habit.description, count: habit.count + 1)
+                    if let i = habits.habits.firstIndex(of: habit) {
+                        habits.habits[i] = newHabit
+                    }
+                    
                     dismiss()
                     
                 } label: {
